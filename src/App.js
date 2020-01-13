@@ -24,6 +24,7 @@ class App extends React.Component {
     fetch("https://api.punkapi.com/v2/beers")
     .then(response => response.json())
     .then(d => this.setState({ beers: d }))
+
   }
 
 
@@ -31,6 +32,7 @@ class App extends React.Component {
   render() {
     console.log(this.state.beers)
     console.log("button state " +  this.state.button)
+    
 
     return (
       <div id="maindiv">
